@@ -46,7 +46,7 @@ const ResponsiveAppBar: React.FC<Props> = ({ signIn }) => {
         }}
       >
         <>
-          <Image src="/logo.png" width={400} height={100} alt="climateChange" />
+          <Image src="/logo.png" width={400} height={50} alt="climateChange" />
           <Toolbar
             disableGutters
             sx={{

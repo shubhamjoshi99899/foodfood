@@ -13,7 +13,7 @@ const LandingPageContainer = styled(Box)(({ theme }) => ({
 }));
 
 const LandingPage: React.FC = () => {
-  return <LandingPageContainer></LandingPageContainer>;
+  return <LandingPageContainer>klkjh</LandingPageContainer>;
 };
 
 export default LandingPage;
