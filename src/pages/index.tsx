@@ -16,6 +16,8 @@ import SliderComponent from "@/components/home-slider";
 import MobileApplication from "@/components/mobile-application";
 import Service from "@/components/service";
 import Payments from "@/components/payments";
+import Timings from "@/components/timings";
+import BerlinMap from "@/components/map";
 
 const LandingPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>("restaurant");
@@ -254,6 +256,17 @@ const LandingPage: React.FC = () => {
         <Container maxWidth="lg" sx={{ pt: 10 }}>
           <Payments />
         </Container>
+        <Container maxWidth="lg" sx={{ pt: 10 }}>
+          <Timings />
+        </Container>
+      </section>
+      <section
+        id="standort"
+        style={{ backgroundColor: "#fff", minHeight: "100vh" }}
+      >
+        <Box>
+          <BerlinMap />
+        </Box>
       </section>
     </Box>
   );
