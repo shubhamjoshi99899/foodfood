@@ -260,10 +260,7 @@ const LandingPage: React.FC = () => {
           <Timings />
         </Container>
       </section>
-      <section
-        id="standort"
-        style={{ backgroundColor: "#fff", minHeight: "100vh" }}
-      >
+      <section id="standort" style={{ minHeight: "100vh" }}>
         <Box>
           <BerlinMap />
         </Box>
