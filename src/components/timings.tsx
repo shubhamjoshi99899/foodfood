@@ -53,11 +53,32 @@ const Timings = () => {
     },
     {
       name: "",
-      openTime: "",
-      closeTime: "",
+      openTime: "-",
+      closeTime: "-",
     },
     {
-      name: "Play",
+      name: "",
+      openTime: "-",
+      closeTime: "-",
+    },
+    {
+      name: "Pause",
+      openTime: "16:00",
+      closeTime: "19:00",
+    },
+    {
+      name: "",
+      openTime: "-",
+      closeTime: "-",
+    },
+    {
+      name: "",
+      openTime: "-",
+      closeTime: "-",
+    },
+
+    {
+      name: "Pause",
       openTime: "16:00",
       closeTime: "19:00",
     },
@@ -75,7 +96,7 @@ const Timings = () => {
         </div>
       </div>
       <Grid container spacing={5}>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4}>
           <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left  dark:text-gray-400">
               <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
@@ -103,7 +124,7 @@ const Timings = () => {
             </table>
           </div>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4}>
           <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left  dark:text-gray-400">
               <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
@@ -131,7 +152,7 @@ const Timings = () => {
             </table>
           </div>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4}>
           <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left  dark:text-gray-400">
               <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
