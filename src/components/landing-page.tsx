@@ -4,16 +4,16 @@ import { styled } from "@mui/system";
 
 const LandingPageContainer = styled(Box)(({ theme }) => ({
   backgroundImage: 'url("/Restaurant.png")',
-  backgroundSize: "cover",
-  height: "100vh",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
+  backgroundSize: "cover !important",
+  backgroundPosition: "center !important",
+  backgroundRepeat: "no-repeat !important",
+  backgroundAttachment: "fixed !important",
+  height: "auto",
   mx: 0,
 }));
 
 const LandingPage: React.FC = () => {
-  return <LandingPageContainer>klkjh</LandingPageContainer>;
+  return <LandingPageContainer className="background"></LandingPageContainer>;
 };
 
 export default LandingPage;

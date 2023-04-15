@@ -27,6 +27,7 @@ import BerlinMap from "@/components/map";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
+import AvailableOnSection from "@/components/mobile-application";
 interface Props {
   window?: () => Window;
 }
@@ -356,7 +357,7 @@ const LandingPage: React.FC = () => {
         </section>
         <section id="services" style={{}}>
           <Container maxWidth="lg" sx={{ pt: 10 }}>
-            <MobileApplication />
+            <AvailableOnSection />
             <Service />
           </Container>
         </section>
