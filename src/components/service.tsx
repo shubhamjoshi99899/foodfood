@@ -12,7 +12,7 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import StrollerIcon from "@mui/icons-material/Stroller";
 import SmokingRoomsIcon from "@mui/icons-material/SmokingRooms";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
-import { Grid, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography, Box } from "@mui/material";
 const data = [
   { service: "Bar", icon: <LocalBarIcon /> },
   { service: "Power backup", icon: <Battery2BarIcon /> },
@@ -63,7 +63,6 @@ const Service = () => {
             sm={12}
             md={6}
             lg={3}
-            sx={{}}
           >
             <Stack
               direction="row"
@@ -71,7 +70,7 @@ const Service = () => {
               sx={{
                 borderBottom: "1px solid #f1f1f1",
                 mx: 2,
-                paddingBottom: "10px",
+                paddingBottom: "20px",
               }}
               gap={2}
             >

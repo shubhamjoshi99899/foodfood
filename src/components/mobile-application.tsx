@@ -94,7 +94,7 @@ const AvailableOnSection: React.FC = () => {
             sm: "1px solid #c5c5c5",
             md: "none",
           },
-          px: 15,
+          px: 5,
           py: { xs: 10, sm: 10 },
         }}
       >
@@ -113,7 +113,7 @@ const AvailableOnSection: React.FC = () => {
             sm: "1px solid #c5c5c5",
             md: "none",
           },
-          px: 15,
+          px: 5,
           py: { xs: 10, sm: 10 },
         }}
       >

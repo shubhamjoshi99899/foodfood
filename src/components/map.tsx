@@ -7,7 +7,7 @@ const BerlinMap = () => {
   return (
     <Box py={10}>
       <div style={{ height: "400px", width: "100%" }}>
-        <Container>
+        <Container maxWidth="md" sx={{ px: "0 !important" }}>
           <div>
             <Typography
               sx={{

@@ -232,7 +232,7 @@ const LandingPage: React.FC = () => {
               sx={{
                 justifyContent: "space-between",
                 flexDirection: { xs: "row", sm: "row" },
-                alignItems: { xs: "center" },
+                alignItems: { xs: "center", md: "center", lg: "center" },
                 backgroundColor: "#DD2E35",
                 flexGrow: 1,
                 display: { md: "none", lg: "flex", sm: "none", xs: "none" },
@@ -244,13 +244,13 @@ const LandingPage: React.FC = () => {
                   px: 5,
                   flexGrow: 1,
                   color: "#fff",
-                  fontSize: "1.7rem",
+                  fontSize: "2rem",
                   fontWeight: 400,
                   fontFamily: "Contrail One !important",
                 }}
               >
                 City Chicken <br />{" "}
-                <span style={{ fontSize: "0.875rem" }}>
+                <span style={{ fontSize: "0.875rem", marginBottom: "-20px" }}>
                   Das Original seit 1996
                 </span>
               </Typography>
@@ -305,11 +305,13 @@ const LandingPage: React.FC = () => {
                       width: "100%",
                       fontFamily: "League Spartan !important",
                       fontSize: "0.875rem",
-                      borderRadius: "8px !important",
                       color: "#000",
                       padding: "10px 20px",
                       backgroundColor: "#D9D9D9 !important",
                       boxShadow: "none",
+                      textTransform: "capitalize",
+                      borderRadius: "0px !important",
+                      fontWeight: 400,
 
                       "&:hover": {
                         backgroundColor: "#fff !important",
@@ -339,9 +341,14 @@ const LandingPage: React.FC = () => {
                 <Typography
                   mt={4}
                   mr={5}
-                  sx={{ color: "#fff", fontFamily: "Nunito Sans" }}
+                  sx={{
+                    color: "#fff",
+                    fontFamily: "Nunito Sans",
+                    textAlign: "left",
+                    fontSize: "14px",
+                  }}
                 >
-                  Food Food <br /> Business Partner
+                  foodfood <br /> Business Partner
                 </Typography>
               </Box>
             </Toolbar>
@@ -365,13 +372,13 @@ const LandingPage: React.FC = () => {
           </Box>
         </section>
         <section id="speisekarte" style={{}}>
-          <Container maxWidth="lg" sx={{ pt: 10 }}>
+          <Container maxWidth="md" sx={{ pt: 10 }}>
             <About />
           </Container>
           <SliderComponent />
         </section>
         <section id="services" style={{}}>
-          <Container maxWidth="lg" sx={{ pt: 10 }}>
+          <Container maxWidth="md" sx={{ pt: 10 }}>
             <AvailableOnSection />
             <Service />
           </Container>
@@ -380,10 +387,10 @@ const LandingPage: React.FC = () => {
           id="offnungszeiten"
           style={{ backgroundColor: "#fff", minHeight: "100vh" }}
         >
-          <Container maxWidth="lg" sx={{ pt: 10 }}>
+          <Container maxWidth="md" sx={{ pt: 10 }}>
             <Payments />
           </Container>
-          <Container maxWidth="lg" sx={{ pt: 10 }}>
+          <Container sx={{ pt: 10 }}>
             <Timings />
           </Container>
         </section>
